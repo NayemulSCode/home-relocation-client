@@ -1,0 +1,7 @@
+.singleService{
+    border: 0px;
+    padding: 0px;
+}
+.singleService span{
+    font-weight: bold;
+}
