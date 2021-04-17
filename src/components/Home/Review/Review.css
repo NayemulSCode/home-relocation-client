@@ -1,0 +1,15 @@
+.reviews .card{
+    border-color: transparent;
+}
+.reviews .card .card-footer{
+    background: transparent;
+    border: 0;
+}
+@media (max-width:765px){
+    .reviewRow{
+        flex-direction: column;
+    }
+    .section-header{
+        text-align: center;
+    }
+}

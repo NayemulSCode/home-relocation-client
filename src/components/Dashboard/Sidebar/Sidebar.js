@@ -2,7 +2,7 @@ import React from 'react';
 import './Sidebar.css'
 import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus,faCog, faSignOutAlt, faThLarge, faGripHorizontal, faUsers, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faPlus,faCog, faSignOutAlt, faThLarge, faGripHorizontal, faUsers, faHome,faComment } from '@fortawesome/free-solid-svg-icons';
 const Sidebar = () => {
     return (
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{height:"100vh"}}>
@@ -25,6 +25,21 @@ const Sidebar = () => {
                 <li>
                     <Link to="/manageService" className="text-white" >
                         <FontAwesomeIcon icon={faThLarge} /> <span>Manage Service</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/addReview" className="text-white" >
+                        <FontAwesomeIcon icon={faComment} /> <span>Review</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/addAdmin" className="text-white" >
+                        <FontAwesomeIcon icon={faUsers} /> <span>Create Admin</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/orderList" className="text-white" >
+                        <FontAwesomeIcon icon={faUsers} /> <span>Order List</span>
                     </Link>
                 </li>
             </ul>
